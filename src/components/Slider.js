@@ -4,7 +4,7 @@ function Slider() {
   return (
     <div className='slider'>
         <div className='slider-items'>
-            <img src="https://i.ibb.co/cXFnLLV/3.png" className="slider-img"></img>
+            <img src="https://i.ibb.co/cXFnLLV/3.png" className="slider-img" alt='img'></img>
         </div>
         <div className='slider-items'>
             <h1 className='slider-header'>LOUNGEWEAR LOVE</h1>
