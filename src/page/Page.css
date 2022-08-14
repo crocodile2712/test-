@@ -1,0 +1,122 @@
+/* cart */
+.cart{
+    padding:20px;
+}
+.cart-header>h1{
+    font-weight: 300;
+    text-align: center;
+}
+.cart-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cart-nav-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.cart-nav-continue>button{
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+}
+.cart-nav-bag{
+    display: flex;
+}
+.cart-nav-bag>p{
+    margin: 0px 10px;
+    color: #000;
+    text-decoration: underline;
+}
+.cart-nav-checkout>button{
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.cart-order{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-products{
+    flex: 3;
+}
+.cart-product{
+    display: flex;
+    justify-content: space-between
+}
+.cart-product-item{
+    flex: 2;
+    display: flex;
+}
+.cart-product-img{
+    width: 200px;
+}
+.cart-product-des{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cart-color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+.cart-quantity{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cart-add-remove>p{
+    font-size: 24px;
+    margin: 5px;
+}
+.cart-add-remove{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-product-total{
+    font-size: 30px;
+    font-weight: 200;
+}
+.cart-summary{
+    flex: 1;
+}
+.cart-summary-info{
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+}
+.cart-summary-info>h1{
+    font-weight: 200;
+}
+.cart-summary-price{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-summary-price:last-child{
+    font-weight: 500;
+    font-size: 24px;
+}
+.cart-summary-button{
+    padding:0 20px;
+}
+.cart-summary-button>button{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}

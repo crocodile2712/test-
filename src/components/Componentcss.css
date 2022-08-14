@@ -29,6 +29,9 @@
     cursor: pointer;
     margin-left: 25px;
 }
+.cart-icon{
+    color: #000;
+}
 .search-container{
     border: 0.5px solid lightgray;
     display: flex;

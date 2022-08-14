@@ -1,23 +1,24 @@
-import "./App.css";
-import Slider from "./components/Slider";
-import Discount from "./components/Discount";
-import Navbar from "./components/Navbar";
-import CategoryItems from "./components/CategoryItems";
-import Products from "./components/Products";
-import Newsletter from "./components/Newsletter";
-import Footer from "./components/Footer";
+
+import Cart from "./page/Cart";
+import Home from "./page/Home";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Discount />
-      <Navbar />
-      <Slider />
-      <CategoryItems/>
-      <Products/>
-      <Newsletter />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/cart">
+          <Cart/>
+        </Route>
+        <Route path="/">
+          <Home/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
