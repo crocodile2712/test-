@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./Componentcss.css"
 function Slider() {
   return (
@@ -9,7 +10,7 @@ function Slider() {
         <div className='slider-items'>
             <h1 className='slider-header'>LOUNGEWEAR LOVE</h1>
             <p className='slider-des'>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
-            <button className='slider-button'>SHOP NOW</button>
+            <Link to="/product-list" className='slider-button'>SHOP NOW</Link>
         </div>
     </div>
   )

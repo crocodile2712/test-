@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge } from '@mui/material';
+import { Badge } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import "./Componentcss.css";
@@ -20,15 +20,19 @@ function Navbar() {
           </div>
         </form>
         <div className="navbar-child">
-          <h1>LAMA.</h1>
+          <Link to="/"><h1>LAMA.</h1></Link>
         </div>
         <div className="navbar-child">
-          <div>REGISTER</div>
-          <div>SIGN IN</div>
           <div>
-            <Link to="/cart" >
+            <Link to="/register">REGISTER</Link>
+          </div>
+          <div>
+            <Link to="/login">SIGN IN</Link>
+          </div>
+          <div>
+            <Link to="/cart">
               <Badge badgeContent={4} color="primary">
-                <ShoppingCartOutlinedIcon className="cart-icon"/>
+                <ShoppingCartOutlinedIcon className="cart-icon" />
               </Badge>
             </Link>
           </div>

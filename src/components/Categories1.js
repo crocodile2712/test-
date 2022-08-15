@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./Componentcss.css"
 
 function Categories1({item}) {
@@ -7,7 +8,7 @@ function Categories1({item}) {
         <img src={item.img} className='category-img' alt='category'></img>
         <div className='category-info'>
             <h1 className='category-title'>{item.title}</h1>
-            <button className='category-button'>SHOP NOW</button>
+            <Link to="/product-list" className='category-button'>SHOP NOW</Link>
         </div>
     </div>
   )

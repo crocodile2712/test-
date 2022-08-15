@@ -6,6 +6,10 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Register from "./page/Register";
+import Login from "./page/Login";
+import ProductPage from "./page/ProductPage";
+import ProductList from "./page/ProductList";
 
 function App() {
   return (
@@ -14,8 +18,20 @@ function App() {
         <Route path="/cart">
           <Cart/>
         </Route>
+        <Route path="/register">
+          <Register/>
+        </Route>
+        <Route path="/login">
+          <Login/>
+        </Route>
+        <Route path="/product-list">
+          <ProductList/>
+        </Route>
+        <Route path="/product-page">
+          <ProductPage />
+        </Route>
         <Route path="/">
-          <Home/>
+          <Home />
         </Route>
       </Switch>
     </Router>
