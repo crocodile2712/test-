@@ -11,7 +11,7 @@ function Product({item}) {
         <img src={item.img} alt="Product" className='product-img'></img>
         <div className='product-icons'>
             <div className='product-icon'> <SearchIcon /></div>
-            <Link to="/product-page" className='product-icon'> <ShoppingCartOutlinedIcon /></Link>
+            <Link to= {`/product-page/${item.id}`} className='product-icon'> <ShoppingCartOutlinedIcon /></Link>
             <Link to="/product-list" className='product-icon'> <FavoriteBorderIcon /></Link>
         </div>
     </div>
