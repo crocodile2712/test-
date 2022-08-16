@@ -2,20 +2,29 @@ import React from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
-function CartItem() {
+function CartItem({item,cartList,setCartList,index}) {
+  const cartListClone = [...cartList]
+  const handleAse =()=>{
+    cartListClone[index].total += 1;
+    setCartList(cartListClone)
+  }
+  const handleDes =()=>{
+    cartListClone[index].total -=1;
+    setCartList(cartListClone)
+  }
   return (
     <div>
       <div className="cart-product">
         <div className="cart-product-item">
           <img
-            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&amp;resize=480%3A%2A"
+            src={item.img}
             className="cart-product-img"
             alt="img"
           />
           <div className="cart-product-des">
             <div>
               <b>Product: </b>
-              JESSIE THUNDER SHOES
+              {item.productName}
             </div>
             <div>
               <b>ID: </b>
@@ -30,11 +39,11 @@ function CartItem() {
         </div>
         <div className="cart-quantity">
           <div className="cart-add-remove">
-            <AddIcon className="cart-icon" />
-            <p>2</p>
-            <RemoveIcon className="cart-icon" />
+            <RemoveIcon className="cart-icon" onClick={handleDes}/>
+            <p>{item.total}</p>
+            <AddIcon className="cart-icon" onClick={handleAse}/>
           </div>
-          <div className="cart-product-total">$30</div>
+          <div className="cart-product-total">{`$ ${item.price * item.total}`}</div>
         </div>
       </div>
     </div>

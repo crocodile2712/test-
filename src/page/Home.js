@@ -7,14 +7,14 @@ import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 
-function Home() {
+function Home({cartList,wishList,setWishList}) {
   return (
     <div>
       <Discount />
-      <Navbar />
+      <Navbar cartList={cartList}/>
       <Slider />
       <CategoryItems />
-      <Products />
+      <Products wishList={wishList} setWishList={setWishList}/>
       <Newsletter />
       <Footer />
     </div>

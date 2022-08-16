@@ -10,18 +10,19 @@ import Register from "./page/Register";
 import Login from "./page/Login";
 import ProductPage from "./page/ProductPage";
 import ProductList from "./page/ProductList";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [cartList,setCartList] = useState([])
-  useEffect(()=>{
-    localStorage.setItem("cartList",JSON.stringify(cartList))
-  },[cartList])
+  const [wishList,setWishList] = useState([])
+  // useEffect(()=>{
+  //   localStorage.setItem("cartList",JSON.stringify(cartList))
+  // },[cartList])
   return (
     <Router>
       <Switch>
         <Route path="/cart">
-          <Cart cartList={cartList} setCartList={setCartList}/>
+          <Cart cartList={cartList} setCartList={setCartList} wishList={wishList}/>
         </Route>
         <Route path="/register">
           <Register/>
@@ -30,13 +31,13 @@ function App() {
           <Login/>
         </Route>
         <Route path="/product-list">
-          <ProductList/>
+          <ProductList cartList={cartList} setCartList={setCartList} wishList={wishList} setWishList={setWishList}/>
         </Route>
-        <Route path="/product-page/:id" >
+        <Route path="/product-page/:id">
           <ProductPage cartList={cartList} setCartList={setCartList}/>
         </Route>
         <Route path="/">
-          <Home />
+          <Home cartList={cartList} setCartList={setCartList} wishList={wishList} setWishList={setWishList}/>
         </Route>
       </Switch>
     </Router>

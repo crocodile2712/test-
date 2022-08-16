@@ -6,10 +6,10 @@ import Newsletter from '../components/Newsletter';
 import Products from '../components/Products';
 import "./Page.css";
 
-function ProductList() {
+function ProductList({cartList,wishList,setWishList}) {
   return (
     <div>
-        <Navbar />
+        <Navbar cartList={cartList}/>
         <Discount />
         <h1 className='product-list-title'>Dresses</h1>
         <div className='product-list-bar'>
@@ -41,7 +41,7 @@ function ProductList() {
                 </select>
             </div>
         </div>
-        <Products />
+        <Products wishList={wishList} setWishList={setWishList}/>
         <Newsletter />
         <Footer />
     </div>

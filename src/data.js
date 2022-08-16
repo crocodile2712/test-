@@ -44,49 +44,49 @@ export const sliderItems = [
     {
       id:1,
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
-      productName:"Shirt",
-      price: 30
+      productName:"T-Shirt",
+      price: 25
     },
     {
       id:2,
       img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
-      productName:"Shirt",
-      price: 30
+      productName:"Sleeveless shirts type 1",
+      price: 35
     },
     {
       id:3,
       img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
-      productName:"Shirt",
+      productName:"Sleeveless shirts type 2",
       price: 30
     },
     {
       id:4,
       img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
-      productName:"Shirt",
-      price: 30
+      productName:"Long Skirt",
+      price: 100
     },
     {
       id:5,
       img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
-      productName:"Shirt",
-      price: 30
+      productName:"Hand Bag",
+      price: 15
     },
     {
       id:6,
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
-      productName:"Shirt",
-      price: 30
+      productName:"Cap",
+      price: 10
     },
     {
       id:7,
       img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
-      productName:"Shirt",
-      price: 30
+      productName:"Sleeveless shirts type 3",
+      price: 50
     },
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
-      productName:"Shirt",
-      price: 30
+      productName:"Cloak",
+      price: 150
     },
   ]

@@ -16,10 +16,11 @@ function ProductPage({ cartList ,setCartList}) {
   const [productNumber,setProductNumber] =useState(1);
   const { id } =useParams();
   const product = popularProducts.find((ele)=>{
-    return ele.id = id;
+    return ele.id === Number(id);
   })
   const handleAse = () => {
     setProductNumber(productNumber + 1);
+    console.log(product)
   }
   const handleDes = () => {
     if(productNumber - 1 === 0){
@@ -41,7 +42,7 @@ function ProductPage({ cartList ,setCartList}) {
   }
   return (
     <div>
-      <Navbar />
+      <Navbar cartList={cartList}/>
       <Discount />
       <div className="productp">
         <img className="productp-img" src={product.img} alt="img"/>

@@ -106,7 +106,7 @@
     display: flex;
     justify-content: space-between;
 }
-.cart-summary-price:last-child{
+.cart-summary-price-total{
     font-weight: 500;
     font-size: 24px;
 }

@@ -5,7 +5,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import "./Componentcss.css";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({cartList}) {
   return (
     <div className="navbar">
       <div className="navbar-wrapper">
@@ -31,7 +31,7 @@ function Navbar() {
           </div>
           <div>
             <Link to="/cart">
-              <Badge badgeContent={4} color="primary">
+              <Badge badgeContent={cartList.length} color="primary">
                 <ShoppingCartOutlinedIcon className="cart-icon" />
               </Badge>
             </Link>
